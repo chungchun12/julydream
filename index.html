@@ -1,14 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>julydream</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록형 HTML 예제</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-안녕?ㄴ    
+
+    <h1>목록형 HTML 예제</h1>
+
+    <h2>불리트 목록 (Unordered List)</h2>
+    <ul>
+        <li>항목 1</li>
+        <li>항목 2</li>
+        <li>항목 3
+            <ul>
+                <li>하위 항목 1</li>
+                <li>하위 항목 2</li>
+            </ul>
+        </li>
+        <li>항목 4</li>
+    </ul>
+
+    <h2>번호 매기기 목록 (Ordered List)</h2>
+    <ol>
+        <li>첫 번째 항목</li>
+        <li>두 번째 항목</li>
+        <li>세 번째 항목</li>
+        <li>네 번째 항목</li>
+    </ol>
+
+    <h2>링크 목록</h2>
+    <ul>
+        <li><a href="https://www.example.com" target="_blank">Example.com</a></li>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+    </ul>
+
+    <h2>이미지 목록</h2>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 1">
+        <p>이미지 설명 1</p>
+    </div>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/300x200" alt="Placeholder Image 2">
+        <p>이미지 설명 2</p>
+    </div>
+
 </body>
 </html>
